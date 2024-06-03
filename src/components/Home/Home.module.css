@@ -1,0 +1,68 @@
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 92vh;
+    width: 80%;
+    margin: auto;
+    padding-top: 15vh;
+}
+.intro{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.intro h1{
+    width:100%;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    background: linear-gradient(180deg,#1b22a4 , #7648aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro p{
+    width: 95%;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+}
+.contact h2{
+    background: linear-gradient(180deg,#1b22a4 , #7648aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+}
+.contact a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.contact a:first-of-type{
+    color: #333;
+}
+.contact a:last-child:hover{
+    color: aqua;
+    transition: ease-in-out 0.2s;
+}
+.icon{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 28vh;
+    padding-left: .4rem;
+}
+.icon img{
+    width: 80%;
+    margin-top: 1rem;
+}

@@ -4,7 +4,7 @@ import Social from '../Social/Social';
 const Menu = ()=>{
     return(
         <header>
-            <span className={styles.span}>LOGO</span>
+            <span className={styles.logo}>RIALGOU</span>
             <nav className={styles.nav}>
                 <Link to='/portafolio/'>Inicio</Link>
                 <Link to="portafolio/proyectos">Proyectos</Link>
