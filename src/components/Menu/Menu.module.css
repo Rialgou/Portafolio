@@ -29,14 +29,58 @@ header{
 .logo{
     background: linear-gradient(180deg,#1b22a4 , #7648aa);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: default;
     padding-bottom: 1px;
     color: #1b1f77;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 .nav a:hover{
     color: aqua;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.15s;
+}
+
+a.active{
+    color: aqua;
+}
+.divider {
+    display: none;
+}
+@media (max-width: 340px){
+    .divider {
+        margin: 0 1rem;
+        width: 5px;
+        height: 70%;
+        display: flex;
+        background-color: #000; /* Opcional: Cambia el color para móviles */
+    }
+}
+@media (max-width: 830px) {
+    
+    header{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    .nav {
+        display: none; /* Oculta la barra de navegación de texto */
+    }
+
+    .navMov {
+        display: flex; /* Muestra la barra de navegación de iconos */
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .navMov a img {
+        width: 2rem; /* Ajusta el tamaño del icono según sea necesario */
+        transition: transform 0.3s;
+    }
+
+    .navMov a img:hover {
+        transform: scale(1.2); /* Añade un efecto al pasar el cursor */
+    }
 }

@@ -28,11 +28,44 @@
     color: #333;
     margin-top: 1rem;
 }
-.contact{
+.containercontact{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 40%;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+} 
+.skills h2{
+    background: linear-gradient(180deg,#1b22a4 , #7648aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+}
+.skills ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.skills ul img{
+    width: 4rem; 
+    padding-left: 0.5em;
+    transition: transform ease-in-out 0.15s;
+}
+.skills ul img:hover{
+    transform: scale(1.5);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .contact h2{
     background: linear-gradient(180deg,#1b22a4 , #7648aa);
@@ -43,17 +76,26 @@
     color: #333;
 }
 .contact a{
+    margin-top: 1rem;
     text-decoration: none;
     color: #333;
     font-size: 1.5rem;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 .contact a:first-of-type{
     color: #333;
 }
 .contact a:last-child:hover{
     color: aqua;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.15s;
+}
+.contact a img
+{
+    width: 3rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
 }
 .icon{
     width: 20%;
@@ -65,4 +107,60 @@
 .icon img{
     width: 80%;
     margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        padding-top: 5vh;
+    }
+    
+    .intro {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .intro h1 {
+        font-size: 2.2rem;
+    }
+    
+    .intro p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .containercontact  {
+        width: 90%;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    .skills, .contact{
+        align-items: center;
+    }
+
+    .skills h2, .contact h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .skills ul {
+        justify-content: center;
+    }
+    
+    .contact a {
+        font-size: 1.2rem;
+    }
+    
+    .icon {
+        width: 50%;
+        padding-bottom: 10vh;
+    }
+    
+    .icon img {
+        width: 60%;
+    }
 }

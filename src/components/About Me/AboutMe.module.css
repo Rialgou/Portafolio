@@ -1,0 +1,91 @@
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 12vh;
+    align-items: center;
+    justify-content: center;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.intro h2{
+    width:100%;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    background: linear-gradient(180deg,#1b22a4 , #7648aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.cardcontainer{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-top: 3vh;
+    
+}
+.card {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: rgba(107, 46, 177, 0); /* Tono sutil al hacer hover */
+    border-radius: 12px;
+    border: 1px solid rgba(27, 34, 164, 0.2); /* Un borde tenue */
+    padding: 2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    background-color: rgba(118, 72, 170, 0.1); /* Tono sutil al hacer hover */
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+}
+.imagecontainer {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+}
+.imagecontainer img {
+    width: 100%;
+    max-width: 250px; /* Tamaño máximo de la imagen */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1b22a4;
+}
+
+@media (max-width: 768px) {
+    .intro{
+        flex-direction: column;
+    }
+    .cardcontainer {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+    .image {
+        max-width: 150px;
+        margin-top: 1rem;
+    }
+    .aboutme{
+        padding-top: 1vh;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .intro h2 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        font-size: 1rem;
+    }
+}
